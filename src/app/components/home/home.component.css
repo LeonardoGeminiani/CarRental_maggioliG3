@@ -10,6 +10,7 @@ h1 {
 }
 p {
     font-size: 2.5vw;
+    color: whitesmoke;
 }
 
 .CRMtitle {
@@ -36,7 +37,9 @@ p {
     margin-top: calc(-1 * var(--header-h));
     
     z-index: 1;
-    color: white;
+    color: lightblue;
+    /* -webkit-text-stroke: 2px black; */
+    text-shadow: 0 0 30px black;
     /* filter: brightness(.9); */
     /* position: relative; */
     /* top: 0;
@@ -45,7 +48,7 @@ p {
 }
 
 .img {
-    background-image: url("src/assets/gifsfondo.gif");
+    background-image: url("https://thumbs.gfycat.com/ExhaustedIdioticBluejay.webp");
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
