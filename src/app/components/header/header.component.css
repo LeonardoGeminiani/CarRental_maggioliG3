@@ -8,6 +8,7 @@ ul {
     opacity: 0.67;
     height: var(--header-h);
     transition: 0.3s;
+    z-index: 100;
 }
 
 li {
