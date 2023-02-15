@@ -1,1 +1,80 @@
-<p>auto works!</p>
+<div class="container my-4">
+    <form class="my-4">
+        <div class="form-group">
+            <label for="exampleInputEmail1">categoria</label>
+            <select class="form-select" name="categorie">
+                <option value="" *ngFor="let r of this.categorie" [selected]="r.indx === this.Categoria">{{r.str}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">Marca</label>
+            <input name="Marca" [(ngModel)]="Marca" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">Modello</label>
+            <input name="Modello" [(ngModel)]="Modello" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="form-check d-flex justify-content-around w-50">
+            <div>
+                <input name="ordine" type="radio" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Prezzo crescente</label>
+            </div>
+            <div>
+                <input name="ordine" type="radio" class="form-check-input" id="e">
+                <label class="form-check-label" for="e">Prezzo decrescente</label>
+            </div>
+            <div>
+                <input name="ordine" type="radio" class="form-check-input" id="s" checked>
+                <label class="form-check-label" for="s">Alfabetico</label>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row-reverse">
+            <a class="btn btn-primary" (click)="FormSubmit()">Submit</a>
+        </div>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Immagine
+                </th>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Modello
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Prezzo
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r of this.autoList">
+                <td>
+                    <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
+                </td>
+                <td>
+                    {{r.marca}}
+                </td>
+                <td>
+                    {{r.modello}}
+                </td>
+                <td>
+                    {{StringCategoria(r.categoria)}}
+                </td>
+                <td>
+                    {{r.prezzo}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

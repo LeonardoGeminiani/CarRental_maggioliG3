@@ -48,12 +48,16 @@ p {
 }
 
 .img {
-    background-image: url("https://thumbs.gfycat.com/ExhaustedIdioticBluejay.webp");
+    /* background-image: url("https://thumbs.gfycat.com/ExhaustedIdioticBluejay.webp"); */
+    background-image: url("src/assets/gifsfondo.gif");
+
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     z-index: -2;
 }
 .logo {
@@ -64,3 +68,19 @@ p {
     padding: 10px;
     /* margin-right: 100%; */
 }
+
+.autoCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.autoCont > * {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.autoCont > *:hover{
+    background-color: brown;
+}
+

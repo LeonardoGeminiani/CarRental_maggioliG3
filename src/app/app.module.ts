@@ -8,6 +8,8 @@ import { EditComponent } from './components/edit/edit.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AutoComponent } from './components/auto/auto.component'
+import { AutoService } from './services/auto.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { AutoComponent } from './components/auto/auto.component'
     EditComponent,
     HomeComponent,
     NotFoundComponent,
-    AutoComponent
+    AutoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  
+  providers: [AutoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

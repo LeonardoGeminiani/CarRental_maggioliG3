@@ -7,7 +7,7 @@
             <h1>CAR RENTAL MAGGIOLI AUTO</h1> <!-- titolo  -->
             <p>Il più grande car rental d'italia</p>
         </div>
-        
+
     </div>
 
 </section>
@@ -19,34 +19,8 @@
         </div>
 
         <div class="autoCont">
-            <div class="autocat suv">
-                <h4>Suv</h4>
-                <!-- manca link a sezione auto  -->
-            </div>
-
-            <div class="autocat cabrio">
-                <h4>Cabrio</h4>
-                <!-- manca link a sezione auto  -->
-            </div>
-
-            <div class="autocat supercar">
-                <h4>Supercar</h4>
-                <!-- manca link a sezione auto  -->
-            </div>
-
-            <div class="autocat van">
-                <h4>Van</h4>
-                <!-- manca link a sezione auto  -->
-            </div>
-
-            <div class="autocat berlina">
-                <h4>Berline</h4>
-                <!-- manca link a sezione auto  -->
-            </div>
-
-            <div class="autocat bassocosto">
-                <h4>Da poveri</h4>
-                <!-- manca link a sezione auto  -->
+            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)">
+                <h4>{{o.str}}</h4>
             </div>
         </div>
     </div>
