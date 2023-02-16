@@ -4,30 +4,33 @@
     
 }
 
-#btnFiltra{
-    background-color: black;
-}
 
-.radioColor{
+.radio{
     box-shadow: 0 1px 2px rgba(0,0,0,0.20),
 inset 0px -15px 10px -12px rgba(0,0,0,0.20);
 width: 20px;
 height: 20px;
+padding: 10px;
 }
 
 .textbox{
-    background: linear-gradient(to right, rgb(236, 229, 229), grey);
+    /*background: linear-gradient(to right, rgb(236, 229, 229), grey);*/
+    background-color: grey;
+    color : white;
     border-radius: 10px;
+    font-size: x-large;
 }
 
 .boxSx{
     float : left;
-    margin-left : 10%;
+    margin-left : 5%;
+
 }
 
 .boxDx{
     float : right;
     margin-right: 10%;
+    margin-top : 5%;
 }
 
 #radioUno, #radioDue, #radioTre{
@@ -38,3 +41,9 @@ height: 20px;
 #textUno, #textDue, #textTre{
     margin-top: 20px;
 }
+
+
+#btnFiltra{
+    background-color: black;
+}
+
