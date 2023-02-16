@@ -20,7 +20,7 @@ import { AutoModaleComponent } from './components/auto-modale/auto-modale.compon
     HomeComponent,
     NotFoundComponent,
     AutoComponent,
-    AutoModaleComponent,
+    AutoModaleComponent
   ],
   imports: [
     BrowserModule,

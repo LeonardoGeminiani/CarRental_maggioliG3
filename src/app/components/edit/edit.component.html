@@ -35,11 +35,16 @@
                     </tr>
                     <tr>
                         <th>Lista Optional</th>
-                        <input type="text" [(ngModel)]="r.listaOptional">
+                        <input type="text" [(ngModel)]="r.SlOptional">
                     </tr>
                     <tr>
                         <th>Prezzo</th>
                         <input type="text" [(ngModel)]="r.prezzo">
+                    </tr>
+                    <tr>
+                        <th>Descrizione:</th>
+                        <button class="btn btn-secondary w-100"
+                        (click)="EditDesc(r)">Modifica Descrizione</button>
                     </tr>
                 </table>
             </td>
@@ -51,3 +56,6 @@
 </table>
 </div>
 <button (click)="Salva()" class="btn btn-primary">Salva</button>
+<button (click)="Crea()" class="btn btn-primary">Crea</button>
+
+<app-auto-modale [editable]="true" [auto]="activeAuto" (closeEvent)="CloseModal()" ></app-auto-modale>

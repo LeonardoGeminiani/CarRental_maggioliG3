@@ -38,6 +38,7 @@ export class AutoComponent {
       this.service.autoList,
       this.SelectedOr
     );
+    this.FormSubmit();
   }
 
   StringCategoria = AutoService.StringCategoria;
@@ -56,7 +57,6 @@ export class AutoComponent {
     a.listaOptional.forEach(el => {
       ret += `${el.nome}: ${el.costo}  `;
     });
-    console.log(ret);
     return ret;
   }
 

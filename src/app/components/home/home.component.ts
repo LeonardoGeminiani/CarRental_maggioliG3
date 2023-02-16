@@ -13,7 +13,7 @@ export class HomeComponent {
   CAuto: {str: string, indx: number}[] = [];
 
   constructor(private router: Router, private service: AutoService){
-    this.CAuto = service.categorie;
+    this.CAuto = service.categorie.slice(1);
   }
   autoCMenu(c: CategoriaAuto){
     this.router.navigate(['auto'], {

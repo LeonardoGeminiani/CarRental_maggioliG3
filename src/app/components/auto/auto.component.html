@@ -62,7 +62,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let r of this.autoList">
+            <tr *ngFor="let r of this.autoList" (click)="OpenModal(r)">
                 <td>
                     <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
                 </td>

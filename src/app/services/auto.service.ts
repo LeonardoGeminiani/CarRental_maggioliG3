@@ -184,7 +184,9 @@ export class AutoService {
     FilterAutoList(Marca: string, Modello: string, ordine: Ordine, cat: CategoriaAuto): Auto[] {
         let _autoList = this.autoList;
 
-        _autoList = _autoList.filter(el => el.categoria == cat);
+        if(cat != CategoriaAuto.Tutte) {
+            _autoList = _autoList.filter(el => el.categoria == cat);
+        }
 
         if (Marca !== "") {
             _autoList = _autoList.filter(el => el.marca.includes(Marca.toLowerCase()));
