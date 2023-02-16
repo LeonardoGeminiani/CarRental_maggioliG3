@@ -3,7 +3,7 @@
 <div class="container my-4">
     <form class="my-4">
         <div class="form-group">
-            <label for="exampleInputEmail1">categoria</label>
+            <label for="exampleInputEmail1">Categoria</label>
             <select class="form-select" name="categorie"  [(ngModel)]="Categoria">
                 <option *ngFor="let r of this.categorie" [value]="r.indx">{{r.str}}</option>
             </select>
