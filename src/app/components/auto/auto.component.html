@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="auto.component.css">
 
-<div class="container">
+<div class="boxcont">
 <div class="boxSx">
 
-    <div class="container my-4">
+    <div class="FormC my-4">
         <form class="my-4">
             <div class="form-group font">
                 <label for="exampleInputEmail1">Categoria</label>
@@ -24,32 +24,28 @@
 
 
             <div class="ordine">
-                <div id="radioUno">
+                <div>
                     <input name="ordine" type="radio" class="form-check-input radio" id="exampleCheck1" [value]="0"
                         [(ngModel)]="SelectedOr">
                     <label class="form-check-label" for="exampleCheck1">Prezzo crescente</label>
                 </div>
-                <div id="radioDue">
+                <div>
                     <input name="ordine" type="radio" class="form-check-input radio" id="e" [value]="1"
                         [(ngModel)]="SelectedOr">
                     <label class="form-check-label" for="e">Prezzo decrescente</label>
                 </div>
-                <div id="radioTre">
+                <div>
                     <input name="ordine" type="radio" class="form-check-input radio" id="s" [value]="2"
                         [(ngModel)]="SelectedOr">
                     <label class="form-check-label" for="s">Ordine alfabetico</label>
                 </div>
-            </div>
-
-
-            <div class="d-flex flex-row-reverse">
-                <a class="btn btn-primary font" id="btnFiltra" (click)="FormSubmit()">Filtra</a>
+                <a class="filtra btn btn-primary font" (click)="FormSubmit()">Filtra</a>
             </div>
         </form>
     </div>
 </div>
 
-<div class="boxDx">
+<div class="boxDx tCont">
     <table class="table font">
         <thead>
             <tr>

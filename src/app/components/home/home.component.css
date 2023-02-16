@@ -96,7 +96,7 @@ p {
     align-items: center;
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
-    text-shadow: 0 0 30px black;
+    /* text-shadow: 0 0 30px black; */
 }
 #cat
 {
@@ -110,7 +110,7 @@ p {
     object-fit: fill;
     scale: 1.1;
     padding: 0;
-    transition: 0.3s;
+    transition: scale 0.3s;
 }
 #categorie
 {

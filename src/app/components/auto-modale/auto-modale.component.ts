@@ -17,9 +17,11 @@ export class AutoModaleComponent {
 
   Close() {
     this.closeEvent.emit();
-    if (this.auto) {
-      this.auto.descrizione = this.el?.nativeElement.textContent ?? "";
+    if (this.auto && this.el) {
+      this.auto.descrizione = this.el.nativeElement.textContent ?? "";
+      this.el.nativeElement.textContent = "";
     }
+    console.log(this.auto?.descrizione, this.auto, this.el?.nativeElement.textContent, this.el);
   }
 
   get categoria() {

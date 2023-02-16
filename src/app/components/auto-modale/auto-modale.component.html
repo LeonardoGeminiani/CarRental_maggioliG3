@@ -14,8 +14,7 @@
                 </div>
 
             </div>
-            <div class="desc"  [attr.contenteditable]="editable ?? false">
-                <div #input [textContent]="descrizione"></div>
+            <div #input class="desc"  [attr.contenteditable]="editable ?? false" [textContent]="descrizione">
             </div>
         </div>
         <span class="bottom">
