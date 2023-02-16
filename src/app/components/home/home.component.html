@@ -21,8 +21,10 @@
         </div>
 
         <div class="autoCont">
-            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)">
-                <h4>{{o.str}}</h4>
+            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)" id="cat">
+                <div>
+                    <h4>{{o.str}}</h4>
+                </div>
             </div>
         </div>
     </div>
