@@ -8,6 +8,9 @@
             <th>
                 Dati
             </th>
+            <th>
+                Cancella
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -39,6 +42,9 @@
                         <input type="text" [(ngModel)]="r.prezzo">
                     </tr>
                 </table>
+            </td>
+            <td>
+                <div (click)="Elimina(r)" class="Elimina">❌</div>
             </td>
         </tr>
     </tbody>

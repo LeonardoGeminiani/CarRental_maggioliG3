@@ -21,6 +21,10 @@ export class EditComponent {
   
   StringCategoria = AutoService.StringCategoria;
 
+  Elimina(a: Auto){
+    this.autoListCopy = this.autoListCopy.filter(el => el.id !== a.id );
+  }
+
   Salva(){
     this.service.autoList = this.autoListCopy;
   }
