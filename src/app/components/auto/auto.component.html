@@ -57,39 +57,43 @@
                     Immagine
                 </th>
                 <th>
-                    Marca
-                </th>
-                <th>
-                    Modello
-                </th>
-                <th>
-                    Categoria
-                </th>
-                <th>
-                    Prezzo
+                    Dati
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let r of this.autoList" (click)="OpenModal(r)">
+            <tr *ngFor="let r of this.autoList">
                 <td>
                     <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
                 </td>
                 <td>
-                    {{r.marca}}
-                </td>
-                <td>
-                    {{r.modello}}
-                </td>
-                <td>
-                    {{StringCategoria(r.categoria)}}
-                </td>
-                <td>
-                    {{r.prezzo}}
+                    <table>
+                        <tr>
+                            <th>Marca</th>
+                            <td>{{r.marca}}</td>
+                        </tr>
+                        <tr>
+                            <th>Modello</th>
+                            <td>{{r.modello}}</td>
+                        </tr>
+                        <tr>
+                            <th>Categoria</th>
+                            <td>{{StringCategoria(r.categoria)}}</td>
+                        </tr>
+                        <tr>
+                            <th>Lista Optional</th>
+                            <td>{{StringaOptional(r)}}</td>
+                        </tr>
+                        <tr>
+                            <th>Prezzo</th>
+                            <td>{{r.prezzo}}</td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </tbody>
     </table>
+    
     <app-auto-modale (closeEvent)="CloseModal()" [auto]="AutoModalSelected"></app-auto-modale>
 </div>
 

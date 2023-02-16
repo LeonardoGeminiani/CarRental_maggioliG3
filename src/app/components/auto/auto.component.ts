@@ -40,9 +40,7 @@ export class AutoComponent {
     );
   }
 
-  StringCategoria(c: CategoriaAuto): string {
-    return Object.values(CategoriaAuto)[c as number].toString();
-  }
+  StringCategoria = AutoService.StringCategoria;
 
   FormSubmit() {
     this._autoList = this.service.FilterAutoList(
@@ -51,6 +49,15 @@ export class AutoComponent {
       this.SelectedOr,
       this.Categoria
     )
+  }
+
+  StringaOptional(a: Auto){
+    let ret = "";
+    a.listaOptional.forEach(el => {
+      ret += `${el.nome}: ${el.costo}  `;
+    });
+    console.log(ret);
+    return ret;
   }
 
   OpenModal(a: Auto){

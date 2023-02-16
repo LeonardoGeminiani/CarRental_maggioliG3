@@ -1,1 +1,47 @@
-<p>edit works!</p>
+<div class="scrollable">
+<table class="table font">
+    <thead>
+        <tr>
+            <th>
+                Immagine
+            </th>
+            <th>
+                Dati
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of this.autoListCopy">
+            <td>
+                <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Marca</th>
+                        <input type="text" [(ngModel)]="r.marca">
+                    <tr>
+                        <th>Modello</th>
+                        <input type="text" [(ngModel)]="r.modello">
+                    </tr>
+                    <tr>
+                        <th>Categoria</th>
+                        <select class="form-select textbox" name="categorie" id="textUno" [(ngModel)]="r.categoria">
+                            <option *ngFor="let d of this.categorie" [value]="d.indx">{{d.str}}</option>
+                        </select>
+                    </tr>
+                    <tr>
+                        <th>Lista Optional</th>
+                        <input type="text" [(ngModel)]="r.listaOptional">
+                    </tr>
+                    <tr>
+                        <th>Prezzo</th>
+                        <input type="text" [(ngModel)]="r.prezzo">
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<button (click)="Salva()" class="btn btn-primary">Salva</button>

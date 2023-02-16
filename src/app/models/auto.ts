@@ -16,6 +16,7 @@ export class Auto
         public categoria: CategoriaAuto,
         public prezzo: number,
         public immagine: string,
-        public descrizione: string
+        public descrizione: string,
+        public listaOptional: {nome: string, costo: number}[]
     ){}
 }
