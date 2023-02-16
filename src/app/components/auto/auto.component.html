@@ -60,7 +60,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let r of this.autoList">
+            <tr *ngFor="let r of this.autoList" (click)="OpenModal(r)" >
                 <td>
                     <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
                 </td>
@@ -76,8 +76,8 @@
                 <td>
                     {{r.prezzo}}
                 </td>
-                <app-auto-modal [auto]="r"></app-auto-modal>
             </tr>
         </tbody>
     </table>
+    <app-auto-modale (closeEvent)="CloseModal()" [auto]="AutoModalSelected"></app-auto-modale>
 </div>
