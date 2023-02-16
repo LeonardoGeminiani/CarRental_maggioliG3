@@ -16,6 +16,25 @@ height: 20px;
 }
 
 .textbox{
-    background: linear-gradient(to right, white, grey);
+    background: linear-gradient(to right, rgb(236, 229, 229), grey);
     border-radius: 10px;
+}
+
+.boxSx{
+    float : left;
+    margin-left : 10%;
+}
+
+.boxDx{
+    float : right;
+    margin-right: 10%;
+}
+
+#radioUno, #radioDue, #radioTre{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#textUno, #textDue, #textTre{
+    margin-top: 20px;
 }
