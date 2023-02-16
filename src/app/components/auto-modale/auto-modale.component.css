@@ -29,6 +29,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    height: 80%;
 }
 
 /* The Close Button */
@@ -37,4 +38,65 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+}
+
+.top {
+    display: flex;
+    height: 100%;
+    /* justify-content: space-b etween; */
+}
+
+.top :nth-child(2) {
+    flex: 1.5;
+}
+
+.top :nth-child(1) {
+    flex: 1;
+    text-align: center;
+}
+
+.top * {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.top :nth-child(1) img {
+    width: 100%;
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-car {
+    /* vertical-align: middle; */
+    justify-content:center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-car div{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* height: 56%; */
+}
+
+.name {
+    height: 20%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.desc {
+    font-size: large;
+}
+
+.bk {
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
 }
