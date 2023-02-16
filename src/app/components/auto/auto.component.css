@@ -1,0 +1,21 @@
+.font{
+    font-family: Garamond;
+    font-size: large;
+    
+}
+
+#btnFiltra{
+    background-color: black;
+}
+
+.radioColor{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.20),
+inset 0px -15px 10px -12px rgba(0,0,0,0.20);
+width: 20px;
+height: 20px;
+}
+
+.textbox{
+    background: linear-gradient(to right, white, grey);
+    border-radius: 10px;
+}

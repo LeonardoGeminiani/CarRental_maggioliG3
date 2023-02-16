@@ -15,7 +15,8 @@ p {
 
 .CRMtitle {
     width: 66%;
-    padding: 1%;
+    /* padding: 1%; */
+    padding:3.5%;
 }
 
 .bk{
@@ -25,7 +26,7 @@ p {
     background-color: rgba(0, 0, 0, 0.297);
     z-index: -1;
     top:0;
-    left: 0;
+    left:0;
 }
 .paneltitle {
     width: 100%;
@@ -34,19 +35,21 @@ p {
     justify-content: space-between;
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-end;
+    
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
     z-index: 1;
-    color: var(--main-color);
+    color: lightblue;
     /* -webkit-text-stroke: 2px black; */
-    text-shadow: 0 0 30px black;
+    /*text-shadow: 0 0 30px black;
     /* filter: brightness(.9); */
     /* position: relative; */
     /*top: 0;*/
     /* z-index: -1; */
 }
+
 .autoCont
 {
     width: 100%;
@@ -124,3 +127,11 @@ p {
     border-radius: 20px;
 }
 
+.titolo{
+    background: linear-gradient(to left,rgb(255, 255, 255), rgb(46, 169, 209));
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
