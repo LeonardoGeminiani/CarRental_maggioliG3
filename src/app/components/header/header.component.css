@@ -32,7 +32,7 @@ ul:hover
     opacity: 0.9;
 }
 li:hover {
-    background-color: var(--main-color);
+    background-color: red;
 }
 
 li:hover * {
