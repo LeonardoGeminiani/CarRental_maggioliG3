@@ -15,6 +15,7 @@ export class Auto
         public modello: string,
         public categoria: CategoriaAuto,
         public prezzo: number,
-        public immagine: string
+        public immagine: string,
+        public descrizione: string
     ){}
 }

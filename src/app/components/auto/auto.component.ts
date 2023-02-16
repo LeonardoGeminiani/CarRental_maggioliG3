@@ -48,7 +48,8 @@ export class AutoComponent {
     this._autoList = this.service.FilterAutoList(
       this.Marca,
       this.Modello,
-      this.SelectedOr
+      this.SelectedOr,
+      this.Categoria
     )
   }
 
