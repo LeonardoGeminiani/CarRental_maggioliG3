@@ -2,44 +2,44 @@
 
 <div class="container my-4">
     <form class="my-4">
-        <div class="form-group">
+        <div class="form-group font">
             <label for="exampleInputEmail1">Categoria</label>
-            <select class="form-select" name="categorie"  [(ngModel)]="Categoria">
+            <select class="form-select textbox" name="categorie"  [(ngModel)]="Categoria">
                 <option *ngFor="let r of this.categorie" [value]="r.indx">{{r.str}}</option>
             </select>
         </div>
 
-        <div class="form-group">
+        <div class="form-group font">
             <label for="exampleInputPassword1">Marca</label>
-            <input name="Marca" [(ngModel)]="Marca" class="form-control" id="exampleInputPassword1">
+            <input name="Marca" [(ngModel)]="Marca" class="form-control textbox" id="exampleInputPassword1">
         </div>
 
-        <div class="form-group">
+        <div class="form-group font">
             <label for="exampleInputPassword1">Modello</label>
-            <input name="Modello" [(ngModel)]="Modello" class="form-control" id="exampleInputPassword1">
+            <input name="Modello" [(ngModel)]="Modello" class="form-control textbox" id="exampleInputPassword1">
         </div>
 
-        <div class="form-check d-flex justify-content-around w-50">
+        <div class="form-check d-flex justify-content-around w-50 font">
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="exampleCheck1" [value]="0" [(ngModel)]="SelectedOr">
+                <input name="ordine" type="radio" class="form-check-input radioColor" id="exampleCheck1" [value]="0" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="exampleCheck1">Prezzo crescente</label>
             </div>
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="e" [value]="1" [(ngModel)]="SelectedOr">
+                <input name="ordine" type="radio" class="form-check-input radioColor" id="e" [value]="1" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="e">Prezzo decrescente</label>
             </div>
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="s" [value]="2" [(ngModel)]="SelectedOr">
+                <input name="ordine" type="radio" class="form-check-input radioColor" id="s" [value]="2" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="s">Alfabetico</label>
             </div>
         </div>
 
         <div class="d-flex flex-row-reverse">
-            <a class="btn btn-primary" (click)="FormSubmit()">Submit</a>
+            <a class="btn btn-primary font" id="btnFiltra" (click)="FormSubmit()">Filtra</a>
         </div>
     </form>
 
-    <table class="table">
+    <table class="table font">
         <thead>
             <tr>
                 <th>
@@ -60,7 +60,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let r of this.autoList">
+            <tr *ngFor="let r of this.autoList" (click)="OpenModal(r)" >
                 <td>
                     <img [src]="r.immagine" [alt]="r.modello + 'IMG'">
                 </td>
@@ -76,8 +76,8 @@
                 <td>
                     {{r.prezzo}}
                 </td>
-                <app-auto-modal [auto]="r"></app-auto-modal>
             </tr>
         </tbody>
     </table>
+    <app-auto-modale (closeEvent)="CloseModal()" [auto]="AutoModalSelected"></app-auto-modale>
 </div>

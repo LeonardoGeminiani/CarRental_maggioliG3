@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Subject } from 'rxjs';
 import { Auto, CategoriaAuto } from 'src/app/models/auto';
 import { AutoService, Ordine } from 'src/app/services/auto.service';
 
@@ -11,10 +12,14 @@ import { AutoService, Ordine } from 'src/app/services/auto.service';
 })
 export class AutoComponent {
 
+  eventsSubject: Subject<void> = new Subject<void>();
+
   Categoria: CategoriaAuto = 0;
   Marca: string = '';
   Modello: string = '';
   SelectedOr: Ordine = Ordine.Alfabetico;
+
+  AutoModalSelected?: Auto;
   private _autoList: Auto[];
 
   get autoList(){
@@ -38,12 +43,20 @@ export class AutoComponent {
   StringCategoria(c: CategoriaAuto): string {
     return Object.values(CategoriaAuto)[c as number].toString();
   }
-  
+
   FormSubmit() {
     this._autoList = this.service.FilterAutoList(
       this.Marca,
       this.Modello,
       this.SelectedOr
     )
+  }
+
+  OpenModal(a: Auto){
+    this.AutoModalSelected = a;
+  }
+
+  CloseModal(){
+    this.AutoModalSelected = undefined;
   }
 }
