@@ -18,6 +18,14 @@ p {
     /* padding: 1%; */
     padding:3.5%;
 }
+.titolo{
+    background: linear-gradient(to left,rgb(255, 255, 255), rgb(46, 169, 209));
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .bk{
     width: 100%;
@@ -49,13 +57,18 @@ p {
     /*top: 0;*/
     /* z-index: -1; */
 }
-
+.panelcat
+{
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
 .autoCont
 {
     width: 100%;
     text-align: center;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
     align-items: center;
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
@@ -64,24 +77,28 @@ p {
 #cat
 {
     border-radius: 20px;
+    
 }
 #cat:hover
 {
     box-shadow: 0px 0px 25px black;
     border-radius: 20px;
-    overflow: hidden;
     object-fit: fill;
-    scale: 1.2;
+    scale: 1.1;
+    padding: 0;
+    transition: 0.3s;
 }
 #categorie
 {
-    color: var(--main-color);
+    color: black;
     text-align: center;
     text-transform: uppercase;
     padding: 10px 10px;
     margin: 0PX 300px 0px;
     background-color: red;
     border-radius: 20px;
+    margin: 50px;
+    margin-bottom: 100px;
 }
 
 .img {
@@ -123,15 +140,6 @@ p {
 
 .autoCont > * > div {
     height: 200px;
-    background-color: beige;
+    background-color: red;
     border-radius: 20px;
-}
-
-.titolo{
-    background: linear-gradient(to left,rgb(255, 255, 255), rgb(46, 169, 209));
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }

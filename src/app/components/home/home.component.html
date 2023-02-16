@@ -1,6 +1,7 @@
 
 <section class="first">
     <div class="paneltitle"> <!-- pannello che contiene titolo e prima immagine -->
+        <div id="su"></div>
         <div class="bk"></div>
         <div class="img"></div>
         <div class="CRMtitle">
@@ -11,18 +12,20 @@
         </div>
 
     </div>
-    <div id="su"></div>
+    
 </section>
 
 <section>
     <div class="panelcat"> <!-- pannello che contiene categorie  -->
-        <div class="categorie"> <!-- categorie  -->
-            <h2>le categorie</h2>
+        <div id="categorie"> <!-- categorie  -->
+            <h2>le nostre categorie</h2>
         </div>
 
         <div class="autoCont">
-            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)">
-                <h4>{{o.str}}</h4>
+            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)" id="cat">
+                <div>
+                    <h4>{{o.str}}</h4>
+                </div>
             </div>
         </div>
     </div>
