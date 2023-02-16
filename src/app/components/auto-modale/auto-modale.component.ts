@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Auto } from 'src/app/models/auto';
+import { Auto, CategoriaAuto } from 'src/app/models/auto';
 
 @Component({
   selector: 'app-auto-modale[auto]',
@@ -12,5 +12,9 @@ export class AutoModaleComponent{
 
   Close(){
     this.closeEvent.emit();
+  }
+
+  get categoria() {
+    return CategoriaAuto[this.auto?.categoria ?? 0];
   }
 }

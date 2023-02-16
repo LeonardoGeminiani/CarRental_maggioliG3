@@ -1,6 +1,30 @@
 <div id="myModal" class="modal" [style.display]="auto ? 'block': 'none'">
     <div class="modal-content">
         <span class="close" (click)="Close()">&times;</span>
-        <p>{{auto?.modello}}</p>
+        <!-- <p>{{auto?.descrizione}}</p> -->
+        <div class="top">
+            <div>
+                <div class="name">
+                    {{auto?.marca + " - " + auto?.modello}}
+                </div>
+
+                <div class="img-car">
+                    <div [style.background-image]="'url(' + auto?.immagine + ')'">
+                    </div>
+                </div>
+
+            </div>
+            <div class="desc">
+                {{auto?.descrizione}}
+            </div>
+        </div>
+        <span class="bottom">
+            <span>
+                {{auto?.prezzo}}
+            </span>
+            <span>
+                {{categoria}}
+            </span>
+        </span>
     </div>
 </div>
