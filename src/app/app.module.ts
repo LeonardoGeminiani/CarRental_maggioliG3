@@ -10,6 +10,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AutoComponent } from './components/auto/auto.component'
 import { AutoService } from './services/auto.service';
 import { FormsModule } from '@angular/forms';
+import { AutoModaleComponent } from './components/auto-modale/auto-modale.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NotFoundComponent,
     AutoComponent,
+    AutoModaleComponent,
   ],
   imports: [
     BrowserModule,

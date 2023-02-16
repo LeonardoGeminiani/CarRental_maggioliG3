@@ -1,6 +1,12 @@
 import { Injectable } from "@angular/core";
 import { Auto, CategoriaAuto } from "../models/auto";
 
+export enum Ordine {
+    PCrescente,
+    PDecrescente,
+    Alfabetico
+}
+
 @Injectable()
 export class AutoService {
     autoList: Auto[] = [];
@@ -126,8 +132,10 @@ export class AutoService {
         return this.autoList;
     }
 
-    get categorie(): {str: string, indx: number}[] {
-        let ret: {str: string, indx: number}[] = [];
+
+
+    get categorie(): { str: string, indx: number }[] {
+        let ret: { str: string, indx: number }[] = [];
         let arr = Object.values(CategoriaAuto);
         let l = arr.length / 2;
         for (let i = 0; i < l; i++) ret.push({
@@ -139,5 +147,39 @@ export class AutoService {
 
     RemoveAuto(id: CategoriaAuto) {
         this.autoList = this.autoList.filter(el => el.id !== id);
+    }
+
+
+    FilterAutoList(Marca: string, Modello: string, ordine: Ordine): Auto[] {
+        let _autoList = this.autoList;
+
+        if (Marca !== "") {
+            _autoList = _autoList.filter(el => el.marca.includes(Marca.toLowerCase()));
+        }
+
+        if (Modello !== "") {
+            _autoList = _autoList.filter(el => el.modello.includes(Modello.toLowerCase()));
+        }
+
+        return this.SortAutoList(_autoList, ordine);
+    }
+
+    SortAutoList(autoList: Auto[], ordine: Ordine): Auto[] {
+        return autoList.sort(
+            ordine == Ordine.Alfabetico ? (a, b) => {
+                if (a.modello < b.modello) {
+                    return -1;
+                }
+                if (a.modello > b.modello) {
+                    return 1;
+                }
+                return 0;
+            } :
+            ordine == Ordine.PCrescente ? (a, b) => {
+                return a.prezzo - b.prezzo;
+            } : (a, b) => {
+                return b.prezzo - a.prezzo;
+            }
+        );
     }
 }

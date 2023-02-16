@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="auto.component.css">
+
 <div class="container my-4">
     <form class="my-4">
         <div class="form-group">
-            <label for="exampleInputEmail1">categoria</label>
-            <select class="form-select" name="categorie">
-                <option value="" *ngFor="let r of this.categorie" [selected]="r.indx === this.Categoria">{{r.str}}</option>
+            <label for="exampleInputEmail1">Categoria</label>
+            <select class="form-select" name="categorie"  [(ngModel)]="Categoria">
+                <option *ngFor="let r of this.categorie" [value]="r.indx">{{r.str}}</option>
             </select>
         </div>
 
@@ -19,15 +21,15 @@
 
         <div class="form-check d-flex justify-content-around w-50">
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="exampleCheck1">
+                <input name="ordine" type="radio" class="form-check-input" id="exampleCheck1" [value]="0" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="exampleCheck1">Prezzo crescente</label>
             </div>
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="e">
+                <input name="ordine" type="radio" class="form-check-input" id="e" [value]="1" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="e">Prezzo decrescente</label>
             </div>
             <div>
-                <input name="ordine" type="radio" class="form-check-input" id="s" checked>
+                <input name="ordine" type="radio" class="form-check-input" id="s" [value]="2" [(ngModel)]="SelectedOr">
                 <label class="form-check-label" for="s">Alfabetico</label>
             </div>
         </div>
@@ -74,6 +76,7 @@
                 <td>
                     {{r.prezzo}}
                 </td>
+                <app-auto-modal [auto]="r"></app-auto-modal>
             </tr>
         </tbody>
     </table>
