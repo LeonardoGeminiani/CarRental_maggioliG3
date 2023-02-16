@@ -7,19 +7,18 @@
             <h1>CAR RENTAL MAGGIOLI AUTO</h1> <!-- titolo  -->
             <p>Il più grande car rental d'italia</p>
         </div>
-
     </div>
 
 </section>
 
 <section>
     <div class="panelcat"> <!-- pannello che contiene categorie  -->
-        <div class="categorie"> <!-- categorie  -->
+        <div id="categorie"> <!-- categorie  -->
             <h2>le categorie</h2>
         </div>
 
         <div class="autoCont">
-            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)">
+            <div *ngFor="let o of CAuto" class="{{o.str}}" (click)="autoCMenu(o.indx)" id="cat">
                 <h4>{{o.str}}</h4>
             </div>
         </div>
