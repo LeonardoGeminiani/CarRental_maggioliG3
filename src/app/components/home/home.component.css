@@ -256,3 +256,58 @@ a:visited
 .panelsedi, #par_chi_siamo {
     border-radius: 0;
 }
+
+.autoCont > * > div {
+    filter: brightness(80%);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: filter 0.3s;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.autoCont > * > div > * {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.autoCont > * {
+    z-index: 1;
+}
+
+.autoCont > *:hover {
+    z-index: 999;
+}
+
+.autoCont > * > div:hover {
+    filter: brightness(60%);
+}
+
+.autoCont > .Suv > div {
+    background-image: url("https://cdn.discordapp.com/attachments/1075331512855183401/1076077211603456060/jeep-cherokee-400x214-2.jpg");
+}
+
+.autoCont > .Berlina > div {
+    background-image: url("https://www.gruppodemariani.it/files/2020/06/asset.MQ6_.0.20180730160657.jpg");
+}
+
+.autoCont > .Van > div {
+    background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077552529059900/cad7b566aa2a4f25ab25fdef5f99af42.jpg?width=659&height=371");
+}
+
+.autoCont > .Cabrio > div {
+    background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077794133557350/mercedes-benz-e-klasse-cabriolet-2020.jpg?width=659&height=371");
+}
+
+.autoCont > .Supercar > div {
+    background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079236500176996/Progetto_senza_titolo.png?width=659&height=371");
+}
+
+.autoCont > .Bassocosto > div {
+    background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079677518663690/5s8HX9NvcBJWIsdxSK4F7l-c2788a73d9319b245cac2f58368373c7-lancia-delta-front-1100.jpg?width=659&height=455");
+}
