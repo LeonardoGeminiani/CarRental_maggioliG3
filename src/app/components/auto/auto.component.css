@@ -8,6 +8,7 @@
     height: min-content;
     display: inline-block;
     background-color: black;
+    margin-left: 1vw;
 }
 
 label {
@@ -84,4 +85,8 @@ td {
 
 label {
     padding: 10px;
+}
+
+input, select {
+    cursor: pointer;
 }
