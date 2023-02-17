@@ -2,9 +2,7 @@
 {
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* margin-bottom: 500px; */
 }
-
 h1 {
     font-size: 6.5vw;
 }
@@ -16,12 +14,13 @@ a:visited
 {
     color: black;
 }
-.CRMtitle {
+.CRMtitle 
+{
     width: 66%;
-    /* padding: 1%; */
     padding:3.5%;
 }
-.titolo{
+.titolo
+{
     background: linear-gradient(to left,rgb(255, 255, 255), rgb(46, 169, 209));
     background-size: cover;
     -webkit-background-clip: text;
@@ -29,26 +28,25 @@ a:visited
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.typewriter h3 {
+.typewriter h3 
+{
     color: #fff;
     font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em lightblue; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .15em lightblue; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .75s step-end infinite;
-  }
+    }
   
-  /* The typing effect */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: lightblue }
@@ -63,9 +61,9 @@ a:visited
     top:0;
     left:0;
 }
-.paneltitle {
+.paneltitle 
+{
     width: 100%;
-    /* padding: 15%; */
     flex-direction: row-reverse;
     justify-content: space-between;
     display: flex;
@@ -77,12 +75,6 @@ a:visited
     margin-bottom: 0;
     z-index: 1;
     color: lightblue;
-    /* -webkit-text-stroke: 2px black; */
-    /*text-shadow: 0 0 30px black;
-    /* filter: brightness(.9); */
-    /* position: relative; */
-    /*top: 0;*/
-    /* z-index: -1; */
 }
 .panelcat
 {
@@ -99,7 +91,6 @@ a:visited
     align-items: center;
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
-    /* text-shadow: 0 0 30px black; */
 }
 
 #cat:hover
@@ -124,8 +115,8 @@ a:visited
     margin-bottom: 100px;
 }
 
-.img {
-    /* background-image: url("https://thumbs.gfycat.com/ExhaustedIdioticBluejay.webp"); */
+.img 
+{
     background-image: url("src/assets/gifsfondo.gif");
 
     background-repeat: no-repeat;
@@ -137,30 +128,34 @@ a:visited
     left: 0;
     z-index: -2;
 }
-.logo {
+.logo 
+{
     width: 30%;
 }
-.logo img{
+.logo img
+{
     width: 100%;
     padding: 10px;
-    /* margin-right: 100%; */
 }
 
-.autoCont {
+.autoCont 
+{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 440px;
 }
 
-.autoCont > * {
+.autoCont > * 
+{
     width: calc(100% / 3);
     padding: 10px;
     box-sizing: border-box;
     flex-grow: 1;
 }
 
-.autoCont > * > div {
+.autoCont > * > div 
+{
     height: 200px;
     background-color: #c3dfe0;
     
@@ -176,12 +171,10 @@ a:visited
 {
     width: 100%;
     height: 100vh;
-    /* margin-top: 50px; */
     margin-bottom: 0;
     z-index: 1;
     color: black;
     background-color: #c3dfe0;
-    
 }
 .chi_siamo
 {
@@ -199,7 +192,6 @@ a:visited
     text-transform: uppercase;
     background-color: #c3dfe0;
     padding: 10px 0 10px 0;
-    
     margin: 0 50px 0;
 }
 #par_chi_siamo
@@ -208,7 +200,6 @@ a:visited
     margin-top: 60px;
     padding-left: 30px;
     background-color: #c3dfe0;
-    
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -217,32 +208,32 @@ a:visited
     text-align: center;
     padding: 100px;
 }
-.googlemaps > * {
+.googlemaps > *
+{
     width: 100%;
     margin: 0;
     height: 100%;
-    /* top: 0; */
-    /* padding-right: 10px; */
-    /*  */
-    /* position: absolute; */
 }
 
-.infosedi h3 {
-    /* font-size: large; */
+.infosedi h3 
+{
     padding: 30px;
 }
 
-.panelsedi {
+.panelsedi
+{
     height: min-content;
     margin-top: 50px;
 }
 
-.sediflex > * {
+.sediflex > * 
+{
     flex: 1 0 50%;
     width: 50%;
 }
 
-.sediflex {
+.sediflex 
+{
     display: flex;
 }
 #par_chi_siamo, #chi_siamotit,.panelsedi,.autoCont > * > div,#categorie, #cat:hover
@@ -253,11 +244,13 @@ a:visited
     border-radius: 10px;
 }
 
-.panelsedi, #par_chi_siamo {
+.panelsedi, #par_chi_siamo 
+{
     border-radius: 0;
 }
 
-.autoCont > * > div {
+.autoCont > * > div 
+{
     filter: brightness(80%);
     background-color: transparent;
     background-size: cover;
@@ -269,46 +262,56 @@ a:visited
     display: flex;
 }
 
-.autoCont > * > div > * {
+.autoCont > * > div > * 
+{
     font-size: 4vw;
     font-weight: bolder;
     color: white;
     text-shadow: 0 0 20px black;
 }
 
-.autoCont > * {
+.autoCont > * 
+{
     z-index: 1;
 }
 
-.autoCont > *:hover {
+.autoCont > *:hover 
+{
     z-index: 999;
 }
 
-.autoCont > * > div:hover {
+.autoCont > * > div:hover 
+{
     filter: brightness(60%);
 }
 
-.autoCont > .Suv > div {
+.autoCont > .Suv > div 
+{
     background-image: url("https://cdn.discordapp.com/attachments/1075331512855183401/1076077211603456060/jeep-cherokee-400x214-2.jpg");
 }
 
-.autoCont > .Berlina > div {
+.autoCont > .Berlina > div 
+{
     background-image: url("https://www.gruppodemariani.it/files/2020/06/asset.MQ6_.0.20180730160657.jpg");
 }
 
-.autoCont > .Van > div {
+.autoCont > .Van > div 
+{
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077552529059900/cad7b566aa2a4f25ab25fdef5f99af42.jpg?width=659&height=371");
 }
 
-.autoCont > .Cabrio > div {
+.autoCont > .Cabrio > div 
+{
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077794133557350/mercedes-benz-e-klasse-cabriolet-2020.jpg?width=659&height=371");
 }
 
-.autoCont > .Supercar > div {
+.autoCont > .Supercar > div 
+{
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079236500176996/Progetto_senza_titolo.png?width=659&height=371");
 }
 
-.autoCont > .Bassocosto > div {
+.autoCont > .Bassocosto > div 
+{
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079677518663690/5s8HX9NvcBJWIsdxSK4F7l-c2788a73d9319b245cac2f58368373c7-lancia-delta-front-1100.jpg?width=659&height=455");
 }
 
