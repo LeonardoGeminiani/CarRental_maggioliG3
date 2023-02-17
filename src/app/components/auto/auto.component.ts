@@ -54,8 +54,8 @@ export class AutoComponent {
 
   StringaOptional(a: Auto){
     let ret = "";
-    a.listaOptional.forEach(el => {
-      ret += `${el.nome}: ${el.costo}  `;
+    a.listaOptional.forEach((el, i) => {
+      ret += `${el.nome}: ${this.service.formatter.format(el.costo)}`;
     });
     return ret;
   }

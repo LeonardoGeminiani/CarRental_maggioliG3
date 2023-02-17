@@ -1,68 +1,82 @@
-.first, h1
-{
+.first,
+h1 {
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 h1 {
     font-size: 6.5vw;
 }
+
 p {
     font-size: 2.5vw;
     color: whitesmoke;
 }
-a:visited
-{
+
+a:visited {
     color: black;
 }
-.CRMtitle 
-{
+
+.CRMtitle {
     width: 66%;
-    padding:3.5%;
+    padding: 3.5%;
 }
-.titolo
-{
-    background: linear-gradient(to left,rgb(255, 255, 255), rgb(46, 169, 209));
+
+.titolo {
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(46, 169, 209));
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.typewriter h3 
-{
+
+.typewriter h3 {
     color: #fff;
     font-family: monospace;
     overflow: hidden;
-    border-right: .15em lightblue; 
-    white-space: nowrap; 
-    margin: 0 auto; 
+    border-right: .15em lightblue;
+    white-space: nowrap;
+    margin: 0 auto;
     letter-spacing: .15em;
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .75s step-end infinite;
-    }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: lightblue }
-  }
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
 
-.bk{
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: lightblue
+    }
+}
+
+.bk {
     width: 100%;
     position: absolute;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.297);
     z-index: -1;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-.paneltitle 
-{
+
+.paneltitle {
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -70,20 +84,20 @@ a:visited
     height: 100vh;
     justify-content: start;
     align-items: flex-end;
-    
+
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
     z-index: 1;
     color: lightblue;
 }
-.panelcat
-{
+
+.panelcat {
     overflow: hidden;
     padding-bottom: 30px;
     padding-top: 60px;
 }
-.autoCont
-{
+
+.autoCont {
     width: 100%;
     text-align: center;
     justify-content: space-between;
@@ -93,34 +107,32 @@ a:visited
     margin-bottom: 0;
 }
 
-#cat:hover
-{
+#cat:hover {
     box-shadow: 0px 0px 25px black;
-    
+
     object-fit: fill;
     scale: 1.1;
     padding: 0;
     transition: scale 0.3s;
 }
-#categorie
-{
+
+#categorie {
     color: black;
     text-align: center;
     text-transform: uppercase;
     padding: 10px 10px;
     margin: 0PX 300px 0px;
     background-color: #c3dfe0;
-    
+
     margin: 30px;
     margin-bottom: 100px;
 }
 
-.img 
-{
+.img {
     background-image: url("src/assets/gifsfondo.gif");
 
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -128,47 +140,44 @@ a:visited
     left: 0;
     z-index: -2;
 }
-.logo 
-{
+
+.logo {
     width: 30%;
 }
-.logo img
-{
+
+.logo img {
     width: 100%;
     padding: 10px;
 }
 
-.autoCont 
-{
+.autoCont {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 440px;
 }
 
-.autoCont > * 
-{
+.autoCont>* {
     width: calc(100% / 3);
     padding: 10px;
     box-sizing: border-box;
     flex-grow: 1;
 }
 
-.autoCont > * > div 
-{
+.autoCont>*>div {
     height: 200px;
     background-color: #c3dfe0;
-    
+
 }
-.panelsedi h2
-{
+
+.panelsedi h2 {
     text-transform: uppercase;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.panelsedi
-{
+
+.panelsedi {
     width: 100%;
     height: 100vh;
     margin-bottom: 0;
@@ -176,8 +185,8 @@ a:visited
     color: black;
     background-color: #c3dfe0;
 }
-.chi_siamo
-{
+
+.chi_siamo {
     padding-top: 150px;
     width: 100%;
     height: 100vh;
@@ -186,16 +195,16 @@ a:visited
     z-index: 1;
     color: black;
 }
-#chi_siamotit
-{
+
+#chi_siamotit {
     text-align: center;
     text-transform: uppercase;
     background-color: #c3dfe0;
     padding: 10px 0 10px 0;
     margin: 0 50px 0;
 }
-#par_chi_siamo
-{
+
+#par_chi_siamo {
     color: black;
     margin-top: 60px;
     padding-left: 30px;
@@ -203,54 +212,54 @@ a:visited
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.footer
-{
+
+.footer {
     text-align: center;
     padding: 100px;
 }
-.googlemaps > *
-{
+
+.googlemaps>* {
     width: 100%;
     margin: 0;
     height: 100%;
 }
 
-.infosedi h3 
-{
+.infosedi h3 {
     padding: 30px;
 }
 
-.panelsedi
-{
+.panelsedi {
     height: min-content;
     margin-top: 50px;
 }
 
-.sediflex > * 
-{
+.sediflex>* {
     flex: 1 0 50%;
     width: 50%;
 }
 
-.sediflex 
-{
+.sediflex {
     display: flex;
 }
-#par_chi_siamo, #chi_siamotit,.panelsedi,.autoCont > * > div,#categorie, #cat:hover
-{
+
+#par_chi_siamo,
+#chi_siamotit,
+.panelsedi,
+.autoCont>*>div,
+#categorie,
+#cat:hover {
     color: whitesmoke;
     background-color: rgb(87, 170, 198);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.panelsedi, #par_chi_siamo 
-{
+.panelsedi,
+#par_chi_siamo {
     border-radius: 0;
 }
 
-.autoCont > * > div 
-{
+.autoCont>*>div {
     filter: brightness(80%);
     background-color: transparent;
     background-size: cover;
@@ -262,56 +271,46 @@ a:visited
     display: flex;
 }
 
-.autoCont > * > div > * 
-{
+.autoCont>*>div>* {
     font-size: 4vw;
     font-weight: bolder;
     color: white;
     text-shadow: 0 0 20px black;
 }
 
-.autoCont > * 
-{
+.autoCont>* {
     z-index: 1;
 }
 
-.autoCont > *:hover 
-{
+.autoCont>*:hover {
     z-index: 999;
 }
 
-.autoCont > * > div:hover 
-{
+.autoCont>*>div:hover {
     filter: brightness(60%);
 }
 
-.autoCont > .Suv > div 
-{
+.autoCont>.Suv>div {
     background-image: url("https://cdn.discordapp.com/attachments/1075331512855183401/1076077211603456060/jeep-cherokee-400x214-2.jpg");
 }
 
-.autoCont > .Berlina > div 
-{
+.autoCont>.Berlina>div {
     background-image: url("https://www.gruppodemariani.it/files/2020/06/asset.MQ6_.0.20180730160657.jpg");
 }
 
-.autoCont > .Van > div 
-{
+.autoCont>.Van>div {
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077552529059900/cad7b566aa2a4f25ab25fdef5f99af42.jpg?width=659&height=371");
 }
 
-.autoCont > .Cabrio > div 
-{
+.autoCont>.Cabrio>div {
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076077794133557350/mercedes-benz-e-klasse-cabriolet-2020.jpg?width=659&height=371");
 }
 
-.autoCont > .Supercar > div 
-{
+.autoCont>.Supercar>div {
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079236500176996/Progetto_senza_titolo.png?width=659&height=371");
 }
 
-.autoCont > .Bassocosto > div 
-{
+.autoCont>.Bassocosto>div {
     background-image: url("https://media.discordapp.net/attachments/1075331512855183401/1076079677518663690/5s8HX9NvcBJWIsdxSK4F7l-c2788a73d9319b245cac2f58368373c7-lancia-delta-front-1100.jpg?width=659&height=455");
 }
 
@@ -319,7 +318,15 @@ a:visited
     margin: 10px;
 }
 
-.icone{
+.icone {
     width: 2rem;
     height: 2rem;
+}
+
+#par_chi_siamo > * {
+    font-size: 20px;
+}
+
+.infosedi > *{
+    font-size: 2vw;
 }
