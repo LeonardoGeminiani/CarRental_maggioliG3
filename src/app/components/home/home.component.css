@@ -170,7 +170,7 @@ p {
 {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .panelsedi
@@ -184,12 +184,37 @@ p {
     background-color: red;
     border-radius: 30px;
 }
-#chi_siamo
+.chi_siamo
 {
+    padding-top: 200px;
     width: 100%;
     height: 100vh;
     margin-top: calc(-1 * var(--header-h));
     margin-bottom: 0;
     z-index: 1;
     color: black;
+}
+#chi_siamotit
+{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    margin: 0 50px 0;
+}
+#par_chi_siamo
+{
+    color: black;
+    margin-top: 60px;
+    padding-left: 30px;
+    background-color: red;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer
+{
+    text-align: center;
+    padding: 100px;
 }
