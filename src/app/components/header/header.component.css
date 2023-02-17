@@ -11,6 +11,10 @@ ul {
     z-index: 100;
 }
 
+img{
+    height: 100%;
+}
+
 li {
     float: left;
     height: var(--header-h);
@@ -32,7 +36,7 @@ ul:hover
     opacity: 0.9;
 }
 li:hover {
-    background-color: red;
+    background-color:  rgb(46, 169, 209);
 }
 
 li:hover * {

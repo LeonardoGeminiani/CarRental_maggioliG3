@@ -84,7 +84,7 @@ p {
 .panelcat
 {
     overflow: hidden;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     padding-top: 60px;
 }
 .autoCont
@@ -100,13 +100,13 @@ p {
 }
 #cat
 {
-    border-radius: 20px;
+    
     
 }
 #cat:hover
 {
     box-shadow: 0px 0px 25px black;
-    border-radius: 20px;
+    
     object-fit: fill;
     scale: 1.1;
     padding: 0;
@@ -119,9 +119,9 @@ p {
     text-transform: uppercase;
     padding: 10px 10px;
     margin: 0PX 300px 0px;
-    background-color: red;
-    border-radius: 20px;
-    margin: 50px;
+    background-color: #c3dfe0;
+    
+    margin: 30px;
     margin-bottom: 100px;
 }
 
@@ -163,8 +163,8 @@ p {
 
 .autoCont > * > div {
     height: 200px;
-    background-color: red;
-    border-radius: 20px;
+    background-color: #c3dfe0;
+    
 }
 .panelsedi h2
 {
@@ -177,16 +177,16 @@ p {
 {
     width: 100%;
     height: 100vh;
-    margin-top: calc(-1 * var(--header-h));
+    /* margin-top: 50px; */
     margin-bottom: 0;
     z-index: 1;
     color: black;
-    background-color: red;
-    border-radius: 30px;
+    background-color: #c3dfe0;
+    
 }
 .chi_siamo
 {
-    padding-top: 200px;
+    padding-top: 150px;
     width: 100%;
     height: 100vh;
     margin-top: calc(-1 * var(--header-h));
@@ -198,9 +198,9 @@ p {
 {
     text-align: center;
     text-transform: uppercase;
-    background-color: red;
+    background-color: #c3dfe0;
     padding: 10px 0 10px 0;
-    border-radius: 20px;
+    
     margin: 0 50px 0;
 }
 #par_chi_siamo
@@ -208,8 +208,8 @@ p {
     color: black;
     margin-top: 60px;
     padding-left: 30px;
-    background-color: red;
-    border-radius: 30px;
+    background-color: #c3dfe0;
+    
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -231,7 +231,7 @@ p {
     height: 100%;
     /* top: 0; */
     /* padding-right: 10px; */
-    /* border-radius: 30px; */
+    /*  */
     /* position: absolute; */
 }
 
@@ -252,4 +252,15 @@ p {
 
 .sediflex {
     display: flex;
+}
+#par_chi_siamo, #chi_siamotit,.panelsedi,.autoCont > * > div,#categorie, #cat:hover
+{
+    color: whitesmoke;
+    background-color: rgb(87, 170, 198);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.panelsedi, #par_chi_siamo {
+    border-radius: 0;
 }
