@@ -218,3 +218,38 @@ p {
     text-align: center;
     padding: 100px;
 }
+
+.googlemaps {
+    /* position: absolute; */
+    /* top: 0; */
+    /* height: 100%; */
+}
+
+.googlemaps > * {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    /* top: 0; */
+    /* padding-right: 10px; */
+    /* border-radius: 30px; */
+    /* position: absolute; */
+}
+
+.infosedi h3 {
+    /* font-size: large; */
+    padding: 30px;
+}
+
+.panelsedi {
+    height: min-content;
+    margin-top: 50px;
+}
+
+.sediflex > * {
+    flex: 1 0 50%;
+    width: 50%;
+}
+
+.sediflex {
+    display: flex;
+}
