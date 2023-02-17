@@ -2,4 +2,9 @@
 :root {
     --header-h: 60px;
     --main-color: #2bd8e4;
+    --bs-border-color: rgb(183, 183, 183);
+}
+
+body {
+    background-color: rgb(243, 243, 243);
 }
