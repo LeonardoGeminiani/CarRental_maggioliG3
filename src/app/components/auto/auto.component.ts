@@ -22,15 +22,15 @@ export class AutoComponent {
   AutoModalSelected?: Auto;
   private _autoList: Auto[];
 
-  get autoList(){
+  get autoList() {
     return this._autoList;
   }
 
-  get categorie(): {str: string, indx: number}[] {
+  get categorie(): { str: string, indx: number }[] {
     return this.service.categorie;
   }
 
-  constructor(private route: ActivatedRoute, private service: AutoService){
+  constructor(private route: ActivatedRoute, private service: AutoService) {
     this.route.queryParamMap.subscribe(params => {
       this.Categoria = Number(params.get('c')) ?? undefined;
     });
@@ -52,19 +52,18 @@ export class AutoComponent {
     )
   }
 
-  StringaOptional(a: Auto){
-    let ret = "";
-    a.listaOptional.forEach((el, i) => {
-      ret += `${el.nome}: ${this.service.formatter.format(el.costo)}`;
-    });
-    return ret;
+  StringaOptional(a: {
+    nome: string;
+    costo: number;
+  }) {
+    return `${a.nome}: ${this.service.formatter.format(a.costo)}`;
   }
 
-  OpenModal(a: Auto){
+  OpenModal(a: Auto) {
     this.AutoModalSelected = a;
   }
 
-  CloseModal(){
+  CloseModal() {
     this.AutoModalSelected = undefined;
   }
 }

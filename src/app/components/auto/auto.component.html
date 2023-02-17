@@ -78,7 +78,11 @@
                         </tr>
                         <tr>
                             <th>Lista Optional</th>
-                            <td>{{StringaOptional(r)}}</td>
+                            <td>
+                                <ul>
+                                    <li *ngFor="let o of r.listaOptional">{{StringaOptional(o)}}</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <th>Prezzo</th>
