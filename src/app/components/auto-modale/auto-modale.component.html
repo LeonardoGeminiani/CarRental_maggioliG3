@@ -14,8 +14,7 @@
                 </div>
 
             </div>
-            <div class="desc">
-                {{auto?.descrizione}}
+            <div #input class="desc"  [attr.contenteditable]="editable ?? false" [textContent]="descrizione">
             </div>
         </div>
         <span class="bottom">

@@ -1,0 +1,8 @@
+.scrollable {
+    height: 80vh;
+    overflow: scroll;
+}
+
+.Elimina:hover {
+    scale: 1.1;
+}
